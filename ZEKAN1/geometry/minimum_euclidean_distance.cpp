@@ -33,6 +33,14 @@ istream& operator>>(istream& in, point_t& num){
     return in;
 }
 
+/**---------------------------------------------------------------------
+ * *       `                INFO
+ * What is the idea: 
+ * The idea here is that the distance between two points must be greater
+ * than their distance if they were on a strainght vector from the origin
+ *  
+ *  
+ *----------------------------------------------------------------------**/
 double perpAbsDist(point_t p, point_t q){
     return pow( abs(pow(p.radSq, 0.5) - pow(q.radSq, 0.5)), 2);
 }

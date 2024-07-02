@@ -1,0 +1,18 @@
+{
+    "recommendations": [
+        "aaron-bond.better-comments", 
+        "akmarnafi.comment-headers",
+        "mohammadbaqer.better-folding",
+
+        "joopixel1.pixie-extension",
+        "trinm1709.dracula-theme-from-intellij",
+        "tomoki1207.pdf",
+
+
+        "ms-vscode.cpptools-extension-pack",
+        "visualstudioexptteam.vscodeintellicode",
+        "visualstudioexptteam.intellicode-api-usage-examples"
+
+        // Add more extensions as needed
+    ]
+}
