@@ -13,7 +13,9 @@ int main() {
     // cout << "Starting..." << "\n";
 
     string n;
-    ll maxim, cur=0;
+    ll maxim=0, cur=0;
+
+    cin >> n;
     char l = n[0];
     for(char a: n){
         if(a == l) {
@@ -21,7 +23,8 @@ int main() {
         }
         else {
             maxim = max(maxim, cur);
-            cur = 0;
+            cur = 1;
+            l = a;
         }
     }
     
