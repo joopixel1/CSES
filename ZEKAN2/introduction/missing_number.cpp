@@ -17,9 +17,9 @@ int main() {
     set<ll> s;
     for(int i=1; i<=n; i++) s.insert(i);
 
-    for(int i=1; i<=n; i++) {
+    for(int i=1; i<n; i++) {
         cin >> a;
-        s.erase(i);
+        s.erase(a);
     }
     
     cout << *s.begin();
