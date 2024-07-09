@@ -1,4 +1,5 @@
 #include <iostream>
+#include <set>
 
 using namespace std;
 
@@ -10,15 +11,18 @@ int main() {
     
     // cout << "Starting..." << "\n";
 
-    ll n;
+    ll n, a;
     cin >> n;
-    cout << n;
+
+    set<ll> s;
+    for(int i=1; i<=n; i++) s.insert(i);
+
+    for(int i=1; i<=n; i++) {
+        cin >> a;
+        s.erase(i);
+    }
     
-    while(n != 1) {
-        if(n&1) n = n*3 + 1;
-        else n /= 2;
-        cout << " " << n;
-    } 
- 
+    cout << *s.begin();
+
     return (0);
 }
