@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define MAX_PRIME 10000000007
+#define MAX_PRIME 7
 #define SIZE 100000000
 
 using namespace std;
@@ -15,21 +15,12 @@ ll inv[SIZE+1];
  * Its pretty simple when you think of it you just have to think of the exponent as a base 2 number.
  * 
  *---------------------------------------------**/
-// ll power_mod(ll base, ll exponent, ll mod){
-//     ll ans=1;
-//     while(exponent){
-//         if(exponent&1) ans = (ans*base) %mod;
-//         base = (base*base) %mod;
-//         exponent >>= 1;
-//     }
-//     return ans;
-// }
-ll power_mod(ll a, ll b, ll m){
+ll power_mod(ll base, ll exponent, ll mod){
     ll ans = 1;
-    while(b>0){
-        if(b&1) ans = (ans * a) %m;
-        b /= 2;
-        a = (a*a) %m;
+    while(exponent){
+        if(exponent&1) ans = (ans * base) %mod;
+        base = (base*base) %mod;
+        exponent >>=1;
     }
     return ans;
 }
@@ -63,8 +54,7 @@ void initializeFactorialsAndInverses(){
     for(int i=2; i <= SIZE; i++){
         fact[i] = (i*fact[i-1]) %MAX_PRIME;
         inv[i] = power_mod(fact[i], MAX_PRIME-2, MAX_PRIME);
-    }
-    
+    }    
 }
 
 ll combination(ll a, ll b){
