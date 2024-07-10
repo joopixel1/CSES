@@ -1,5 +1,5 @@
 #include <iostream>
-#include <set>
+#include <vector>
 
 using namespace std;
 using ll = long long;
@@ -25,15 +25,14 @@ int main() {
     else{
         cout << "YES" << "\n";
         
-        set<ll> s, l, r;
-        for(ll i=1; i<=n; i++) s.insert(i);
+        vector<ll> s, l, r;
+        for(ll i=1; i<=n; i++) s.push_back(i);
 
-        for(ll i=1, j=n/2; i<(n+1)/4; i++, j--) s.erase(i), l.insert(i), s.erase(inv(i, n)), l.insert(inv(i, n)),
-            s.erase(j), r.insert(j), s.erase(inv(j, n)), r.insert(inv(j, n));
+        for(ll i=1, j=n/2; i<(n+1)/4; i++, j--) l.push_back(i), l.push_back(inv(i, n)), r.push_back(j), r.push_back(inv(j, n));
         
-        auto it = s.begin();
-        if(s.size() == 3) l.insert(*(it++)), l.insert(*(it++)), r.insert(*(it++));
-        else l.insert(*(it++)), r.insert(*(it++)), r.insert(*(it++)), l.insert(*(it++));
+    
+        if(n&1) l.push_back((n+1)/4), l.push_back(((n+1)/4) * 2), r.push_back(((n+1)/4) * 3);
+        else l.push_back((n+1)/4), l.push_back(inv((n+1)/4, n)), r.push_back((n+1)/4 + 1), r.push_back(inv((n+1)/4 + 1, n));
 
         cout << l.size() << "\n";
         for(ll a: l) cout << a << " ";
