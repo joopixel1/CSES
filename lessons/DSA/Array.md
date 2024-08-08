@@ -25,7 +25,11 @@ A subsequence is a sequence that can be derived from another sequence by deletin
 \[ 2^n \] . This includes the empty subsequence.
 
 ### Ideas
-- s
+- Summing
+- Recursion i.e getting all possible subsequences
+- Data Structures: we use a lot of varying data structure and ideas as questions invlolving subsequences are very diverse.
+- Longest common subsequence between two arrays.
+
 
 
 
