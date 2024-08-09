@@ -15,6 +15,7 @@ A subarray is a contiguous part of an array. It is essentially a slice from the 
     You can also simplify complex arrays or problems by converting the array or problem to a simpler problem that can be solved using Sliding WIndow.
 - Reversing
 - Sorting
+- Data Structures: Use of a lot of varying data structure and ideas can come handy in some tricky questiona.
 
 
 ## Subsequence
