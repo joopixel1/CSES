@@ -10,3 +10,5 @@
 | `std::reverse` | `<algorithm>` | `std::reverse(first_iterator, last_iterator);` |Reverses the order of elements in the range defined by the iterators. The range includes the element pointed to by first_iterator and excludes the element pointed to by last_iterator. |
 | `std::min_element`  | `<algorithm>` | `std::min_element(first_iterator, last_iterator[, compare_function]);`  | Returns an iterator pointing to the smallest element in the range defined by the iterators. If the range is empty, the returned iterator is last_iterator. |
 | `std::max_element`  | `<algorithm>` | `std::max_element(first_iterator, last_iterator[, compare_function]);`  | Returns an iterator pointing to the largest element in the range defined by the iterators. If the range is empty, the returned iterator is last_iterator. |
+| `std::vector::insert` | `<vector>` | `vector.insert(position, value);` or `vector.insert(position, count, value);` or `vector.insert(position, first_iterator, last_iterator);` | Inserts elements into the vector before the specified position. Can insert a single value, multiple copies of a value, or a range of elements. |
+

@@ -30,6 +30,12 @@ A subsequence is a sequence that can be derived from another sequence by deletin
 - Recursion i.e getting all possible subsequences
 - Data Structures: we use a lot of varying data structure and ideas as questions invlolving subsequences are very diverse.
 - Longest common subsequence between two arrays.
+- Greedy Algorithms (while loop): 
+     greedy algorithm is a problem-solving strategy that makes a series of choices, each of which looks the best at the moment. The idea is to build up a solution piece by piece, always choosing the next piece that offers the most immediate benefit (i.e., the "greediest" choice), with the hope that these local optimizations will lead to a globally optimal solution.
+     When to Use Greedy Algorithms: Greedy algorithms work well when a problem exhibits the greedy-choice property and optimal substructure:
+    - Greedy-Choice Property: This means that a locally optimal choice at each step leads to a globally optimal solution. If this property holds, then a greedy algorithm can solve the problem optimally.
+    - Optimal Substructure: This means that the problem can be broken down into smaller subproblems, and the optimal solution to the problem can be constructed from optimal solutions to these subproblems.
+
 
 
 
