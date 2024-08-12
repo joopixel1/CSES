@@ -1,5 +1,17 @@
 # Array
 
+## Array
+
+### Ideas For Problems
+- Two Pointer Technique: Two pointers is really an easy and effective technique that is typically used for searching pairs in a sorted array. Eg find a pair that sum to a K. even comes in handy in triple sum to a K.
+- Sorting
+- Searching
+- DP
+- Greedy
+- Data Structures
+- Summing
+
+
 ## Subarray
 A subarray is a contiguous part of an array. It is essentially a slice from the array, meaning that all the elements in the subarray are in the same order as in the original array and are contiguous.
 
