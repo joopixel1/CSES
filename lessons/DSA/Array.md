@@ -6,10 +6,40 @@
 - Two Pointer Technique: Two pointers is really an easy and effective technique that is typically used for searching pairs in a sorted array. Eg find a pair that sum to a K. even comes in handy in triple sum to a K.
 - Sorting
 - Searching
-- DP
+    - Linear [O(n)]: inear search is the simplest search algorithm that checks each element in a list sequentially until the desired element is found or the list ends. It has a time complexity of \(O(n)\) because, in the worst case, it needs to check every element.
+
+    - Divide and Conquer and Recursion Methods [O(log n)]: 
+        - Binary Search: inary search works on a sorted array by repeatedly dividing the search interval in half. If the value of the target is less than the middle element, the search continues in the lower half; otherwise, it continues in the upper half. It has a time complexity of O(logn).
+        - Ternary Search: Similar to binary search but divides the array into three parts instead of two. It checks two mid-points and determines which section to continue searching in. It also has a time complexity of O(logn).
+        - Fibonnacci Search: This search technique uses Fibonacci numbers to divide the array into sections. It has a similar performance to binary search but can be more efficient in specific scenarios where the data is uniformly distributed.
+        - Interpolation Search: An improved variant of binary search for instances where the values in a sorted array are uniformly distributed. It attempts to predict the position of the target using linear interpolation. The average time complexity is O(loglogn), but in the worst case, it can degrade to O(n).
+
+    - MultiStep Methods: 
+        - Jump Search: Jump search works on sorted arrays by jumping ahead by fixed steps and then performing a linear search in the identified block. It balances the linear and binary search, offering a time complexity of O(root(n)).
+        - Exponential Search: This search algorithm works by first finding a range where the target might be located and then performing a binary search within that range. It has a time complexity of O(logn), and it is particularly effective when dealing with unbounded or very large arrays.
+        
+- DP:
+    - Essentially, it is a simple idea, after solving a problem with a given input, save the result as a reference for future use, so you won’t have to re-solve it.. briefly ‘Remember your Past’ :). 
+    - It is a big hint for DP if the given problem can be broken up into smaller sub-problems, and these smaller subproblems can be divided into still smaller ones, and in this process, you see some overlapping subproblems. 
+    - Additionally, the optimal solutions to the subproblems contribute to the optimal solution of the given problem (referred to as the Optimal Substructure Property).
+    - The solutions to the subproblems are stored in a table or array (memoization) or in a bottom-up manner (tabulation) to avoid redundant computation.
+    - The solution to the problem can be constructed from the solutions to the subproblems.
+    - Dynamic programming can be implemented using a recursive algorithm, where the solutions to subproblems are found recursively, or using an iterative algorithm, where the solutions are found by working through the subproblems in a specific order.
+
+    Techniques to solve Dynamic Programming Problems:
+    1. Top-Down(Memoization): Break down the given problem in order to begin solving it. If you see that the problem has already been solved, return the saved answer. If it hasn’t been solved, solve it and save it. This is usually easy to think of and very intuitive, This is referred to as Memoization.
+
+    2. Bottom-Up(Tabulation): Analyze the problem and see in what order the subproblems are solved, and work your way up from the trivial subproblem to the given problem. This process ensures that the subproblems are solved before the main problem. This is referred to as Dynamic Programming.
+
 - Greedy
 - Data Structures
 - Summing
+- Recursion:
+    - There are two types of cases in recursion i.e. recursive case and a base case.
+    - The base case is used to terminate the recursive function when the case turns out to be true.
+    - Each recursive call makes a new copy of that method in the stack memory.
+    - Examples of Recursive algorithms: Merge Sort, Quick Sort, Tower of Hanoi, Fibonacci Series, Factorial Problem, etc.
+    - Tail recursion is better optimized by compiler than non-tail compilation.
 
 
 ## Subarray
