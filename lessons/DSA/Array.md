@@ -4,7 +4,25 @@
 
 ### Ideas For Problems
 - Two Pointer Technique: Two pointers is really an easy and effective technique that is typically used for searching pairs in a sorted array. Eg find a pair that sum to a K. even comes in handy in triple sum to a K.
-- Sorting
+- Sorting: 
+    Sorting is the process of rearranging elements in an array or list according to a comparison operator. This is crucial for making data easier to manage and search, especially when dealing with large, unordered datasets.Sorting algorithms can be broadly classified into two types:
+    1. **Comparison-based Sorting:** Algorithms that sort data by comparing elements.
+    2. **Non-comparison-based Sorting:** Algorithms that sort data without direct comparisons between elements.
+
+    #### Common Sorting Algorithms
+    1. Selection Sort: Selection Sort works by repeatedly finding the minimum element from an unsorted subarray and moving it to the beginning. It divides the array into a sorted and an unsorted subarray.
+
+    2. Bubble Sort: Bubble Sort repeatedly swaps adjacent elements if they are in the wrong order. It is simple but inefficient for large datasets due to its high time complexity.
+
+    3. Insertion Sort: Insertion Sort is similar to sorting playing cards. The array is divided into a sorted and an unsorted part, and elements from the unsorted part are inserted into their correct position in the sorted part.
+
+    4. Merge Sort: Merge Sort is a divide-and-conquer algorithm that splits the array into two halves, sorts them recursively, and then merges them into a sorted array.
+
+    5. Quick Sort: Quick Sort also follows the divide-and-conquer approach. It selects a pivot element and partitions the array into subarrays, sorting them recursively.
+
+    6. Heap Sort: Heap Sort is a comparison-based algorithm that uses a binary heap data structure. It transforms the array into a max heap and then repeatedly extracts the maximum element.
+
+    7. Counting Sort: Counting Sort is a non-comparative algorithm that counts the occurrences of each element to determine their position in the sorted array.
 - Searching
     - Linear [O(n)]: inear search is the simplest search algorithm that checks each element in a list sequentially until the desired element is found or the list ends. It has a time complexity of \(O(n)\) because, in the worst case, it needs to check every element.
 
@@ -17,7 +35,6 @@
     - MultiStep Methods: 
         - Jump Search: Jump search works on sorted arrays by jumping ahead by fixed steps and then performing a linear search in the identified block. It balances the linear and binary search, offering a time complexity of O(root(n)).
         - Exponential Search: This search algorithm works by first finding a range where the target might be located and then performing a binary search within that range. It has a time complexity of O(logn), and it is particularly effective when dealing with unbounded or very large arrays.
-        
 - DP:
     - Essentially, it is a simple idea, after solving a problem with a given input, save the result as a reference for future use, so you won’t have to re-solve it.. briefly ‘Remember your Past’ :). 
     - It is a big hint for DP if the given problem can be broken up into smaller sub-problems, and these smaller subproblems can be divided into still smaller ones, and in this process, you see some overlapping subproblems. 
@@ -34,16 +51,15 @@
     How to classify a problem as a Dynamic Programming algorithm Problem?
     1. Typically, all the problems that require maximizing or minimizing certain quantities or counting problems that say to count the arrangements under certain conditions or certain probability problems can be solved by using Dynamic Programming.
     2. All dynamic programming problems satisfy the overlapping subproblems property and most of the classic Dynamic programming problems also satisfy the optimal substructure property. Once we observe these properties in a given problem be sure that it can be solved using Dynamic Programming.
-
-- Greedy
-- Data Structures
-- Summing
 - Recursion:
     - There are two types of cases in recursion i.e. recursive case and a base case.
     - The base case is used to terminate the recursive function when the case turns out to be true.
     - Each recursive call makes a new copy of that method in the stack memory.
     - Examples of Recursive algorithms: Merge Sort, Quick Sort, Tower of Hanoi, Fibonacci Series, Factorial Problem, etc.
     - Tail recursion is better optimized by compiler than non-tail compilation.
+- Greedy:
+- Data Structures
+- Summing
 
 
 ## Subarray
