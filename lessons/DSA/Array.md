@@ -31,6 +31,10 @@
 
     2. Bottom-Up(Tabulation): Analyze the problem and see in what order the subproblems are solved, and work your way up from the trivial subproblem to the given problem. This process ensures that the subproblems are solved before the main problem. This is referred to as Dynamic Programming.
 
+    How to classify a problem as a Dynamic Programming algorithm Problem?
+    1. Typically, all the problems that require maximizing or minimizing certain quantities or counting problems that say to count the arrangements under certain conditions or certain probability problems can be solved by using Dynamic Programming.
+    2. All dynamic programming problems satisfy the overlapping subproblems property and most of the classic Dynamic programming problems also satisfy the optimal substructure property. Once we observe these properties in a given problem be sure that it can be solved using Dynamic Programming.
+
 - Greedy
 - Data Structures
 - Summing
