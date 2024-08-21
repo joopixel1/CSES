@@ -91,7 +91,9 @@ A subsequence is a sequence that can be derived from another sequence by deletin
 - Summing
 - Recursion i.e getting all possible subsequences
 - Data Structures: we use a lot of varying data structure and ideas as questions invlolving subsequences are very diverse.
-- Dynamic Programming: eg Longest common subsequence between two arrays - arr[n][m].
+- Dynamic Programming: eg 
+    - Longest common subsequence between two arrays - arr[n][m].
+    - all possible sum of subsequence n^2. USes dp.
 - Greedy Algorithms (while loop): 
      greedy algorithm is a problem-solving strategy that makes a series of choices, each of which looks the best at the moment. The idea is to build up a solution piece by piece, always choosing the next piece that offers the most immediate benefit (i.e., the "greediest" choice), with the hope that these local optimizations will lead to a globally optimal solution.
      When to Use Greedy Algorithms: Greedy algorithms work well when a problem exhibits the greedy-choice property and optimal substructure:
