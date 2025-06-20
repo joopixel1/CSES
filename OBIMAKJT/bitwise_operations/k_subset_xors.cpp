@@ -24,43 +24,31 @@ int main(){
         }
         if (i) b.push_back(i);
     }
+    sort(b.begin(), b.end());
 
 
     // generate k min subset xors using pq
+    set< ll > result;
+    ll repetition = (1LL << (v.size() - b.size()));
+    ll count = (k+repetition-1) / repetition;
     priority_queue< pair< ll, ll >, vector< pair< ll, ll > >, greater< pair< ll, ll > > >pq;
-    set< pair< ll, ll > > s;
     pq.push({0, 0});
-    s.insert({0, 0});
-
-    ll repition = (1LL << (v.size() - b.size()));
-    ll count = (k+repition-1) / repition;
-    set< ll > xors;
-    while((ll)xors.size() < count){
+    while((ll)result.size() < count){
         auto [val, next] = pq.top();
         pq.pop();
-        xors.insert(val);
+        result.insert(val);
 
         if(next < (ll)b.size()){
-            pair< ll, ll > yes = {val ^ b[next], next+1};
-            pair< ll, ll > no = {val, next+1};
-
-            if(!s.count(yes)){
-                pq.push(yes);
-                s.insert(yes);
-            }
-
-            if(!s.count(no)){
-                pq.push(no);
-                s.insert(no);
-            }
+            pq.push({val ^ b[next], next+1});
+            pq.push({val, next+1});
         }
     }
 
     // print results
-    auto p = xors.begin();
+    auto p = result.begin();
     for(ll i=1; i<=k; i++){
         cout << *p << " ";
-        if(!(i%repition)) p++;
+        if(!(i%repetition)) p++;
     }
 
     return 0;
